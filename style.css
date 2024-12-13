@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  padding: 40px;
+}
+
+section#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+}
+
+.profile-pic img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 30px;
+}
+
+.bio {
+  flex: 1;
+}
+
+.bio h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bio p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.bio strong {
+  color: #333;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  border-color: #646cff;
+  filter: drop-shadow(0 0 2em #6595f0b7);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-bottom: 20px;
+  }
+
+  .profile-pic img {
+    margin: 0 auto;
+    -webkit-mask: linear-gradient(180deg, white 65%, transparent);
+    mask: linear-gradient(180deg, white 65%, transparent);
+  }
+
+  .bio {
+    margin-top: 20px;
+  }
+}
