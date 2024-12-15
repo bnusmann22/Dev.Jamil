@@ -42,7 +42,7 @@ section#about-me {
 }
 
 .bio {
-  flex: 1;
+  flex: 2;
 }
 
 .bio h1 {
@@ -83,6 +83,7 @@ section#about-me {
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
+    box-shadow: none;
     text-align: center;
   }
 
