@@ -83,6 +83,7 @@ section#about-me {
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
+    background: none;
     box-shadow: none;
     text-align: center;
   }
@@ -99,5 +100,6 @@ section#about-me {
 
   .bio {
     margin-top: 20px;
+    align-items: left;
   }
 }
